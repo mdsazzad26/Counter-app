@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-container {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: #243b55;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.counter button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    background: #243b55;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.counter button:hover {
+    background: #ff9800;
+    transform: scale(1.1);
+}
+
+#number {
+    font-size: 45px;
+    font-weight: bold;
+    color: #243b55;
+    min-width: 50px;
+}
+
+#reset {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #ff9800;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#reset:hover {
+    background: #e68900;
+}
+
+#message {
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+@media (max-width: 400px) {
+    .counter-container {
+        padding: 30px 15px;
+    }
+
+    .counter {
+        gap: 15px;
+    }
+}
